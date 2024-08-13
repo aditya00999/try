@@ -8,7 +8,10 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 if __name__ == '__main__':
     # Create a Spark session
     spark = SparkSession.builder \
-        .appName("OracleToSpark") \
+        .appName("Oracle") \
         .config("spark.driver.extraClassPath", r"C:\Jar_Files\ojdbc8.jar") \
         .getOrCreate()
     print(spark)
+
+    print("hello")
+
